@@ -36,7 +36,7 @@ public class DonutAuctionPro implements ClientModInitializer {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while (auctionKey.consumeClick()) {
                 if (client.player != null) {
-    client.gui.setScreen(new AuctionScreen());
+    client.setScreen(new AuctionScreen());
 } {
                     client.player.displayClientMessage(
                         Component.literal(
